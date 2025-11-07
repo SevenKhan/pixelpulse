@@ -3,83 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PXP | PixelPulse NFT Collection</title>
+  <title>PixelPulse NFT Collection</title>
   <style>
     body {
+      background: radial-gradient(circle at center, #0a0a0a 0%, #111 100%);
+      color: white;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(270deg, #ff0077, #00ffee, #ffec00, #00ff99, #007bff);
-      background-size: 1200% 1200%;
-      animation: gradientShift 12s ease infinite;
-      font-family: 'Trebuchet MS', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      color: #fff;
-      text-align: center;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-      margin: 20px 0;
+      margin-top: 40px;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
 
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
-      padding-bottom: 50px;
+      gap: 20px;
+      margin-top: 40px;
     }
 
-    .nft {
-      width: 180px;
-      height: 180px;
+    .gallery img {
+      width: 200px;
+      height: 200px;
       border-radius: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #222;
     }
 
-    .nft:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
     }
 
-    .nft img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .socials {
+      margin-top: 50px;
+    }
+
+    .socials a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #00acee;
     }
 
     footer {
-      position: fixed;
-      bottom: 15px;
-      font-size: 0.9rem;
-      opacity: 0.85;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>🌈 PixelPulse NFT Gallery</h1>
+
+  <h1>🔥 PixelPulse NFT Collection 🔥</h1>
+
   <div class="gallery">
-    <div class="nft"><img src="1.png" alt="NFT 1"></div>
-    <div class="nft"><img src="2.png" alt="NFT 2"></div>
-    <div class="nft"><img src="3.png" alt="NFT 3"></div>
-    <div class="nft"><img src="4.png" alt="NFT 4"></div>
-    <div class="nft"><img src="5.png" alt="NFT 5"></div>
+    <img src="1.png" alt="NFT 1">
+    <img src="2.png" alt="NFT 2">
+    <img src="3.png" alt="NFT 3">
+    <img src="4.png" alt="NFT 4">
+    <img src="5.png" alt="NFT 5">
   </div>
-  <footer>⚡ PXP Token | Powered by SevenKhan</footer>
+
+  <div class="socials">
+    <a href="https://twitter.com/mkuscu5353" target="_blank">🐦 Twitter</a>
+    <a href="https://discordapp.com/users/sevenkhan" target="_blank">💬 Discord</a>
+  </div>
+
+  <footer>
+    © 2025 PixelPulse | Created by SevenKhan
+  </footer>
+
 </body>
 </html>
